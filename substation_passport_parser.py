@@ -4,7 +4,7 @@ import json
 import os
 
 
-file_dir = "Данные для парсинга-20230514T121156Z-001"
+FILE_DIR = "Данные для парсинга-20230514T121156Z-001"
 
 
 def passport_parse(file_name):
@@ -39,6 +39,6 @@ def passport_parse(file_name):
             )
 
 
-for item in os.listdir(file_dir):
-    f = os.path.join(file_dir, item)
+for item in os.listdir(FILE_DIR):
+    f = os.path.join(FILE_DIR, item)
     passport_parse(f)
